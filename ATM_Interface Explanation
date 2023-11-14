@@ -1,1 +1,25 @@
+This Java code simulates an ATM interface with functionalities to check balance, withdraw, and deposit money. Here's a breakdown of the code:
 
+1. **`User_Bank_Account` Class**:
+   - This class manages the user's bank account details.
+   - It has a private `bank_balance` variable to store the user's account balance.
+   - The constructor `User_Bank_Account(double starting_amount)` initializes the account balance with a starting amount.
+   - `check_balance()` returns the current account balance.
+   - `deposite_amount(double amount)` allows depositing money into the account, adding the deposited amount to the balance if it's greater than zero.
+   - `withdraw_amount(double amount)` enables withdrawing money from the account if the amount is positive and doesn't exceed the account balance.
+
+2. **`ATM_Machine` Class**:
+   - This class represents the ATM machine.
+   - It contains a reference to a `User_Bank_Account` object.
+   - `ATM_Menu()` displays the options available in the ATM interface - checking balance, withdrawing, depositing, and exiting.
+   - `Start_ATM()` method initiates the ATM functionality, presenting the menu and allowing the user to select options using a `Scanner`.
+   
+3. **`main` Method**:
+   - Creates an instance of `ATM_Interface`.
+   - Initializes a `User_Bank_Account` with a starting balance of 100000.0 (Rupees).
+   - Initializes an `ATM_Machine` object using the created user account.
+   - Calls `Start_ATM()` method to begin the ATM interface operations.
+
+The `Start_ATM()` method repeatedly displays the menu, reads the user's choice, and performs the corresponding operation until the user chooses to exit (option 4). The program then terminates.
+
+It's a simple simulation to demonstrate ATM functionalities in Java using object-oriented programming concepts.
