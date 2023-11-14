@@ -1,1 +1,25 @@
 
+This Java code creates a simple grade calculator for students based on their marks in different subjects. Here's a breakdown of what it does:
+
+1. **Initialization**:
+   - It starts by welcoming the user to the Student Grade Calculator.
+   - It explains what the calculator can do: calculate percentage, total marks, and corresponding grades based on input marks.
+
+2. **Input Collection**:
+   - It prompts the user to input the number of subjects they want to calculate grades for.
+   - It then asks for marks for each subject, sums up the total marks, and calculates the average percentage.
+
+3. **Grade Calculation**:
+   - It categorizes the average percentage into different grade ranges and prints the corresponding grade along with the percentage and total marks obtained.
+   - Each grade range has its own set of conditions, assigning a specific grade based on the average percentage obtained.
+
+4. **Repetitive Calculation**:
+   - After displaying the grade, percentage, and total marks, it asks the user if they want to calculate grades for another set of subjects.
+   - If the user chooses 'yes', it repeats the process. If 'no', it exits the loop and prints a thank you message.
+
+5. **Termination**:
+   - Once the user chooses not to calculate again, it prints a closing message, thanking the user for using the Student Grade Calculator.
+
+The code uses a `Scanner` to collect user input and a loop (`while(true)`) to repeatedly perform calculations until the user decides to stop. It also employs conditional statements (`if-else if`) to determine the grade based on the calculated average percentage.
+
+Overall, it's a straightforward program that demonstrates how grades can be calculated based on marks and how the program can be made interactive by allowing the user to perform multiple calculations.
