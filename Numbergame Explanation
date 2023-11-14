@@ -1,1 +1,33 @@
 
+Sure, let's break down this Java code for a number guessing game:
+
+Initialization:
+
+It starts by initializing variables for the game such as lower_bound, upper_bound, maxguess (maximum number of attempts per round), matchs (number of rounds played), and score.
+Displays a welcome message explaining the rules of the game.
+Game Loop (while(true)) and Random Number Generation:
+
+Enters a loop that runs the game until the user decides to stop.
+Inside the loop, it generates a random number using Random within the specified bounds (lower_bound to upper_bound) as the number the user needs to guess.
+User Input and Guessing Logic:
+
+Asks the user to input their guess within the specified range.
+Compares the user's guess with the randomly generated number:
+If the guess matches the number, it congratulates the user and calculates the score based on the attempts left.
+If the guess is higher or lower than the number, it provides hints accordingly.
+Limits the number of attempts based on maxguess.
+End of Round:
+
+If the user runs out of attempts, it reveals the correct number and prompts the user to play another round.
+Asks the user if they want to play another round. If they decline, it breaks out of the loop, incrementing the matchs counter.
+Game Over:
+
+Once the user decides not to play another round, it exits the loop, displaying the number of rounds played (matchs) and the total score achieved.
+Termination:
+
+Prints a closing message, thanking the user for playing the game.
+This code demonstrates a simple number guessing game where the user has limited attempts to guess a randomly generated number within a specified range. The score is calculated based on the number of attempts taken in each round, and the user can play multiple rounds until they choose to stop.
+
+
+
+
